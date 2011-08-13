@@ -9,7 +9,7 @@
 
 	<footer id="colophon" role="contentinfo">
 			<div id="site-generator">
-				<a href="http://wordpress.org/" rel="generator">Proudly powered by WordPress</a><span class="sep"> | </span><?php printf( __( 'Theme: %1$s by %2$s.', 'toolbox' ), 'Toolbox', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+                <q cite="http://en.wikipedia.org/wiki/Paranoid_Android">I may be paranoid... but not an android</q> - 1984-'<?php echo date('y');?> / Design by <a href="http://www.melonmakers.com/">Luciano Fontoura</a>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
