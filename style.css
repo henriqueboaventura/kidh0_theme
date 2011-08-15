@@ -13,11 +13,28 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/* =Fonts
+-------------------------------------------------------------- */
+@font-face {
+  font-family: 'Estrangelo';
+  src: url("/fonts/estre-webfont.eot");
+  src: url("/fonts/estre-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/estre-webfont.woff") format("woff"), url("/fonts/estre-webfont.ttf") format("truetype"), url("/fonts/estre-webfont.svg#EstrangeloEdessaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
 /* =Structure
 -------------------------------------------------------------- */
 body{
   background-color: #2f2f2f;
   color:#fff;
+  font: normal normal 14px Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Estrangelo", sans-serif;
+  font-weight:normal;
+  margin-top:0px;
 }
 
 #page{
@@ -54,19 +71,32 @@ body{
   #branding ul{
     padding:0px;
   }
-    #branding ul li{
+    .menu ul li{
       display:inline-block;
       margin-right:10px;
     } 
+      .menu a{
+        color:#474747;
+        font: normal normal 16px "Estrangelo", sans-serif;
+        text-decoration:none;
+      }
+      .menu li.current_page_item a{
+        color:#FDBC00;
+      }
 /* =aside
 -------------------------------------------------------------- */
 .widget{
   background-color:#FDBC00;
   border-left:15px solid #000;
   color:#000;
+  font-family: "Estrangelo", sans-serif;
   margin-bottom:15px;
   padding:15px;
 }
+  .widget h1{
+    font-size:25px;
+    font-weight:1em;
+  }
   #search input[type="text"]{
     background-color:#000;
     border:none;
@@ -89,7 +119,24 @@ body{
     padding:15px;
   }
   #content article h1{
+    color:#FDBC00;    
+    font-size:27px;
+  }
+  #content article h1,
+  #content article h2, 
+  #content article h3, 
+  #content article h4, 
+  #content article h5, 
+  #content article h6{
     color:#FDBC00;
+  }
+    #content article h1 a{
+      color:#FDBC00;
+      text-decoration:none;
+    }
+  #content article img{
+    float:left;
+    margin:0px 10px 10px 0px;
   }
 #content #nav-above{
   display:none;
