@@ -25,10 +25,11 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'toolbox' ), max( $paged, $page ) );
+		echo ' | ' . sprintf( __( 'Page %s', 'kidh0_theme' ), max( $paged, $page ) );
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo( 'template_directory' ); ?>/reset.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -48,8 +49,8 @@
 			</hgroup>
 
 			<nav id="access" role="navigation">
-				<h1 class="section-heading"><?php _e( 'Main menu', 'toolbox' ); ?></h1>
-				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'toolbox' ); ?>"><?php _e( 'Skip to content', 'toolbox' ); ?></a></div>
+				<h1 class="section-heading"><?php _e( 'Main menu', 'kidh0_theme' ); ?></h1>
+				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'kidh0_theme' ); ?>"><?php _e( 'Skip to content', 'kidh0_theme' ); ?></a></div>
 
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #access -->

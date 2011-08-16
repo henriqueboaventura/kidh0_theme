@@ -1,9 +1,9 @@
 /*
 Theme Name: kidh0
-Theme URI: http://wordpress.org/extend/themes/toolbox/
+Theme URI: http://wordpress.org/extend/themes/kidh0_theme/
 Author: Henrique Boaventura
 Author URI: http://hboaventura.com/
-Description: Adaptation of the toolbox theme
+Description: Adaptation of the kidh0_theme theme
 Version: 0.1
 License: GNU General Public License
 License URI: license.txt
@@ -34,7 +34,7 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: "Estrangelo", sans-serif;
   font-weight:normal;
-  margin-top:0px;
+  margin:0px 0px 15px 0px;
 }
 
 a{
@@ -44,6 +44,19 @@ a{
 ul, ol{
   padding:0px;
   list-style-position:inside;
+}
+
+p{
+  margin-bottom:15px;
+}
+
+strong{
+  font-weight:bold;
+}
+
+input, textarea, select, option{
+  font-family: arial, sans-serif;
+  font-size:14px;
 }
 
 #page{
@@ -63,8 +76,14 @@ ul, ol{
 }
 
 #colophon{
+  background-color: #474747;
+  border-left:15px solid #FDBC00;
   clear:both;
+  padding:15px;
 }
+  #colophon q:before, #colophon q:after{
+    content:'"';
+  }
 
 /* =branding
 -------------------------------------------------------------- */
@@ -97,6 +116,7 @@ ul, ol{
     display:none;
   }
   #branding ul{
+    margin-bottom:20px;
     padding:0px;
   }
     .menu ul li{
@@ -104,7 +124,7 @@ ul, ol{
       margin-right:10px;
     } 
       .menu a{
-        color:#474747;
+        color:#777;
         font: normal normal 16px "Estrangelo", sans-serif;
         text-decoration:none;
       }
@@ -134,7 +154,7 @@ ul, ol{
   .widget h1{
     font-size:25px;
     font-weight:1em;
-    margin-bottom:5px;
+    margin-bottom:15px;
   }
     .widget h1 a{
       color:#000;
@@ -171,11 +191,18 @@ ul, ol{
   border-left:15px solid #000;
   clear:both;
   float:left;
-  line-height:1.3em;
+  line-height:1.4em;
   margin-bottom:20px;
   padding:15px;
   width:655px;
 }
+  #content article h1{
+    font-size:25px;
+  }
+  #content article ul,
+  #content article ol{
+    margin-bottom:15px;
+  }
 #content .entry-meta{
   font-size:12px;
   margin-bottom:20px;
@@ -184,13 +211,33 @@ ul, ol{
     text-decoration:none;
   }
 #content footer.entry-meta{
-  clear:both;
-  margin:10px 0px 0px 0px;
+  background-color:#555555;
+  clear:both;    
+  font-size:14px;
+  margin:10px 0px -15px -15px;
+  padding:10px;
+  width:665px;
 }
+  #content footer.entry-meta a{
+    text-decoration:underline;
+  }
+  #content footer.entry-meta br{
+    margin-bottom:5px;
+  }
+  #content footer #post_attr{
+    display:inline-block;
+    width:320px;
+  }
+  #content footer #sharing{
+    display:inline-block;
+    margin-top:-20px;
+    width:320px;
+  }
   #content article pre{
     background-color:#FDBC00;
     border-left:15px solid #000;
     color:#000;
+    margin-bottom:15px;
     padding:15px;
   }
   #content article h1.entry-title{
@@ -219,17 +266,58 @@ ul, ol{
 #content #nav-below{
   display:none;
 }
-/*#content #nav-below{
-  background-color:#474747;
-  border-left:15px solid #000;
-  padding:15px;
-}*/
+
+/* =comments
+-------------------------------------------------------------- */
+#comments{
+  margin-left:20px;
+}
+  #comments ol,
+  #comments ul{
+    list-style:none;
+  }
+
+  #comments li.thread-even article{
+    border-color:#FDBC00;
+  }
+    #comments li.depth-2 article{
+      margin-left:20px;
+      width:635px;
+    }
+    #comments li.depth-3 article{
+      margin-left:40px;
+      width:615px;
+    }
+
+    #comments input[type=text],
+    #comments textarea{
+      clear:both;
+      display:block;
+      padding:4px;
+      width:60%;
+    }
+    #comments textarea{
+      width:75%;
+    }
+
+    #comments .form-allowed-tags{
+      font-size:12px;
+    }
+    #comments h3{
+      color:#FDBC00;
+    }
 
 /* =plugins
 -------------------------------------------------------------- */
 .dp-highlighter{
-  border-left:10px solid #FDBC00;;
+  border-left:10px solid #FDBC00;
 }
+  .dp-highlighter .bar{
+    padding-left:35px!important;
+  }
+  .dp-highlighter ol{
+    margin:0px 0px 0px 35px!important;
+  }
 .twitter_title_link{
   background:transparent url(images/tweet_black.png) no-repeat top right;
   padding-right:40px;
