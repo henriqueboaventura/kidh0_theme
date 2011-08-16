@@ -17,8 +17,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 @font-face {
   font-family: 'Estrangelo';
-  src: url("/fonts/estre-webfont.eot");
-  src: url("/fonts/estre-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/estre-webfont.woff") format("woff"), url("/fonts/estre-webfont.ttf") format("truetype"), url("/fonts/estre-webfont.svg#EstrangeloEdessaRegular") format("svg");
+  src: url("fonts/estre-webfont.eot");
+  src: url("fonts/estre-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/estre-webfont.woff") format("woff"), url("fonts/estre-webfont.ttf") format("truetype"), url("fonts/estre-webfont.svg#EstrangeloEdessaRegular") format("svg");
   font-weight: normal;
   font-style: normal; 
 }
@@ -35,6 +35,15 @@ h1, h2, h3, h4, h5, h6{
   font-family: "Estrangelo", sans-serif;
   font-weight:normal;
   margin-top:0px;
+}
+
+a{
+  color:#fff;
+}
+
+ul, ol{
+  padding:0px;
+  list-style-position:inside;
 }
 
 #page{
@@ -60,11 +69,30 @@ h1, h2, h3, h4, h5, h6{
 /* =branding
 -------------------------------------------------------------- */
 #branding{
-  
+  clear:both;
+  float:left;
+  width:100%;
 }
-  #branding #access h1{
-    display:none;
+  h1#site-title{
+    float:left;
+    font-size:70px;
+    margin-bottom:0px;
   }
+    h1#site-title a{
+      text-decoration:none;
+    }
+  h2#site-description{
+    color:#474747;
+    float:right;
+    font-size:25px;
+    margin-top:40px;
+  }
+  #branding #access{
+    clear:both;
+  }
+    #access h1{
+      display:none;
+    }
   #branding .skip-link{
     display:none;
   }
@@ -83,34 +111,81 @@ h1, h2, h3, h4, h5, h6{
       .menu li.current_page_item a{
         color:#FDBC00;
       }
+  #twitter-1 h1{
+    background:;
+  }
 /* =aside
 -------------------------------------------------------------- */
 .widget{
   background-color:#FDBC00;
   border-left:15px solid #000;
   color:#000;
-  font-family: "Estrangelo", sans-serif;
+  font-family: "Estrangelo", sans-serif;  
   margin-bottom:15px;
   padding:15px;
 }
+.widget_twitter,
+.widget_recent_entries{
+  line-height:1em;
+}
+  .widget a{
+    color:#000;
+  }
   .widget h1{
     font-size:25px;
     font-weight:1em;
+    margin-bottom:5px;
   }
-  #search input[type="text"]{
+    .widget h1 a{
+      color:#000;
+      text-decoration:none;
+    }
+  #searchform input[type="text"]{
     background-color:#000;
     border:none;
     color:#fff;
     padding:4px;
+    width:155px;
   }
+  #searchform label{
+    display:none;
+  }
+  #searchform input#searchsubmit{
+    background:transparent url(images/lupa.png) no-repeat top left;
+    border:none;
+    height:29px;
+    text-indent:-1999em;
+    width:29px;
+  }
+  .widget ul{
+    margin-bottom:0px;
+  }
+    .widget ul li{
+      margin-bottom:5px;
+    }
 
 /* =post
 -------------------------------------------------------------- */
 #content article{
   background-color: #474747;
   border-left:15px solid #000;
+  clear:both;
+  float:left;
+  line-height:1.3em;
   margin-bottom:20px;
   padding:15px;
+  width:655px;
+}
+#content .entry-meta{
+  font-size:12px;
+  margin-bottom:20px;
+}
+  #content .entry-meta a{  
+    text-decoration:none;
+  }
+#content footer.entry-meta{
+  clear:both;
+  margin:10px 0px 0px 0px;
 }
   #content article pre{
     background-color:#FDBC00;
@@ -118,9 +193,11 @@ h1, h2, h3, h4, h5, h6{
     color:#000;
     padding:15px;
   }
-  #content article h1{
+  #content article h1.entry-title{
     color:#FDBC00;    
     font-size:27px;
+    line-height:1em;
+    margin-bottom:0px;
   }
   #content article h1,
   #content article h2, 
@@ -138,7 +215,22 @@ h1, h2, h3, h4, h5, h6{
     float:left;
     margin:0px 10px 10px 0px;
   }
-#content #nav-above{
+#content #nav-above,
+#content #nav-below{
   display:none;
 }
-  
+/*#content #nav-below{
+  background-color:#474747;
+  border-left:15px solid #000;
+  padding:15px;
+}*/
+
+/* =plugins
+-------------------------------------------------------------- */
+.dp-highlighter{
+  border-left:10px solid #FDBC00;;
+}
+.twitter_title_link{
+  background:transparent url(images/tweet_black.png) no-repeat top right;
+  padding-right:40px;
+}

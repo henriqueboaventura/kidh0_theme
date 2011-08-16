@@ -46,5 +46,16 @@
 		?>
 
 		<?php edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
+		<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+		<a href="http://twitter.com/share" class="twitter-share-button">Tweet</a>
+		<!-- facebook -->
+		<g:plusone></g:plusone>
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->
