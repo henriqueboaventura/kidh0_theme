@@ -310,14 +310,19 @@ input, textarea, select, option{
 /* =plugins
 -------------------------------------------------------------- */
 .dp-highlighter{
-  border-left:10px solid #FDBC00;
+  background-color: #FDBC00!important;
 }
   .dp-highlighter .bar{
-    padding-left:35px!important;
   }
   .dp-highlighter ol{
-    margin:0px 0px 0px 35px!important;
+    margin-bottom:0px!important;
   }
+    .dp-highlighter ol li{
+      border-color:#000!important;
+    }
+    .dp-highlighter .tools{
+      border-color:#000!important;
+    }
 .twitter_title_link{
   background:transparent url(images/tweet_black.png) no-repeat top right;
   padding-right:40px;
