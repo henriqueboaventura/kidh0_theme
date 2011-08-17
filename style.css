@@ -270,7 +270,7 @@ input, textarea, select, option{
 /* =comments
 -------------------------------------------------------------- */
 #comments{
-  margin-left:20px;
+  margin-left:0px;
 }
   #comments ol,
   #comments ul{
