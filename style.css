@@ -252,7 +252,9 @@ input, textarea, select, option{
   #content article h4, 
   #content article h5, 
   #content article h6{
+    clear:both;
     color:#FDBC00;
+    display:block;
   }
     #content article h1 a{
       color:#FDBC00;
