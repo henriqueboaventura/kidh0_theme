@@ -268,21 +268,24 @@ input, textarea, select, option{
 #content #nav-below{
   display:none;
 }
-.home #content #nav-below{
-  display:block; 
-  margin-bottom:20px;
+.home #content{
+  margin-top:-20px;
 }
-  .home #content #nav-below h1{
-    display:none;
+  .home #content #nav-below{
+    display:block;
+    margin-bottom:20px;
   }
-    #nav-below .nav-previous{
-      float:left;
-      margin-bottom:20px;
+    .home #content #nav-below h1{
+      display:none;
     }
-    #nav-below .nav-next{
-      float:right;
-      margin-bottom:20px;
-    }
+      #nav-below .nav-previous{
+        float:left;
+        margin-bottom:20px;
+      }
+      #nav-below .nav-next{
+        float:right;
+        margin-bottom:20px;
+      }
 
 
 /* =comments
