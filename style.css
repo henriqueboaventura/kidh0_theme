@@ -199,6 +199,9 @@ input, textarea, select, option{
   #content article h1{
     font-size:25px;
   }
+  #content article a{
+    color:#FDBC00;
+  }
   #content article ul,
   #content article ol{
     margin-bottom:15px;
